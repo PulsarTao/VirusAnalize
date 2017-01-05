@@ -11,9 +11,12 @@ for x in str:
 	else:
 		if count==1:
 			s+=x
-			print hex(int(s,16))
-			f.write(s)
+			k= chr(int(s,16))
+			hx=hex(int(s,16))
+			print hx
+			f.write(k)
 			s=""
 			count=0
 			continue
 f.close()
+
